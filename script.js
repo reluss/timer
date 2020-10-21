@@ -62,8 +62,14 @@ document
     function distanceTime() {
     var distance = feierabend - now;
       distance = new Date(distance);
-      hours = distance.getUTCHours(); 
-      minutes = distance.getUTCMinutes(); 
+      // hours = distance.getUTCHours(); 
+      // minutes = distance.getUTCMinutes(); 
+
+
+      hours = distance.getHours(); 
+      minutes = distance.getMinutes(); 
+
+
       seconds = distance.getSeconds(); 
 
     distanceString = hours.toString().padStart(2, '0') 
