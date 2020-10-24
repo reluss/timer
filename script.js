@@ -41,9 +41,9 @@ document
     var feierabend = new Date(input).addHours(workingTime + pauseTime);
     console.log("feierabend" + feierabend);
 
-    //var now = new Date().getTime();
-    var today = new Date();
-    var now = today.setHours( today.getHours() + 2 );
+    var now = new Date().getTime();
+    // var today = new Date();
+    // var now = today.setHours( today.getHours() + 2 );
 
 
     console.log(new Date(now));
@@ -53,9 +53,9 @@ document
     //---------------------------------------------------------------
     x = setInterval(function() {    
       // Get today's date and time
-      //var now = new Date().getTime();
-      var today = new Date();
-      var now = today.setHours( today.getHours() + 2 );
+      var now = new Date().getTime();
+      // var today = new Date();
+      // var now = today.setHours( today.getHours() + 2 );
     
       // Find the distance between now and the count down date
       var distance = feierabend - now;
