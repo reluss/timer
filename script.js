@@ -80,6 +80,7 @@ document
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("remainderDaily").innerHTML = "Feierabend";
+        document.title = "Feierabend";
       }
     }, 1000);
   
